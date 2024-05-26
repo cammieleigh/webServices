@@ -1,0 +1,24 @@
+#   GET http://localhost:8080/genres
+
+  POST http://localhost:8080/genres HTTP/1.1 
+content-type: application/json
+
+{
+    "name": "Fantasy",
+    "ages": "Adult",
+    "aisle": "10"
+}
+
+
+##Render routes
+#   GET https://webservices-vqxm.onrender.com/genres
+
+#   POST https://webservices-vqxm.onrender.com/genres HTTP/1.1 
+# content-type: application/json
+
+# {
+#     "name": "Fantasy",
+#     "ages": "Adult",
+#     "aisle": "10"
+
+# }
