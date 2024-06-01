@@ -36,3 +36,18 @@ content-type: application/json
     "aisle": "10"
 
 }
+###update data render
+  PUT https://webservices-vqxm.onrender.com/genres/665a5e32d1865067aaec098665a5e32d1865067aaec098bb HTTP/1.1 
+content-type: application/json
+
+{
+    "name": "Mystery",
+    "ages": "Adult",
+    "aisle": "8"
+
+}
+
+
+###delete data render
+  DELETE https://webservices-vqxm.onrender.com/genres/665a8a47c243181a2f339a02 HTTP/1.1 
+content-type: application/json
