@@ -2,15 +2,15 @@
 const express = require('express');
 const router = express.Router();
 const genresController = require('../Controllers/genres');
-
+const validation = require('../middleware/validate');
 router.get('/', genresController.getAll);
 
-// router.get('/:id', genresController.getSingle);
+//router.get('/:id', genresController.getSingle);
 
-router.post('/', genresController.createGenre);
+router.post('/', validation.saveGenre, genresController.createGenre);
 
-// router.put('/:id', genresController.updateGenre);
+router.put('/:id', validation.saveGenre, genresController.updateGenre);
 
-// router.delete('/:id', genresController.deleteGenre);
+router.delete('/:id', genresController.deleteGenre);
 
 module.exports = router;

@@ -1,24 +1,38 @@
-#   GET http://localhost:8080/genres
+GET http://localhost:8080/genres
 
-  POST http://localhost:8080/genres HTTP/1.1 
+###post data
+POST http://localhost:8080/genres HTTP/1.1 
+content-type: application/json
+
+{
+    "name":"Romance",
+    "ages":"Teen",
+    "aisle":"16"
+}
+### edit genre
+PUT http://localhost:8080/genres/665285f3b496665285f3b4961eff67d571c41eff67d571cc HTTP/1.1 
+content-type: application/json
+
+{
+    "name":"Mystery",
+    "ages":"Children",
+    "aisle":"11"
+}
+
+### delete genre
+DELETE http://localhost:8080/genres/665a5e51d1865067aaec098c HTTP/1.1 
+content-type: application/json
+
+
+###Render routes
+  GET https://webservices-vqxm.onrender.com/genres
+### post data
+  POST https://webservices-vqxm.onrender.com/genres HTTP/1.1 
 content-type: application/json
 
 {
     "name": "Fantasy",
     "ages": "Adult",
     "aisle": "10"
+
 }
-
-
-##Render routes
-#   GET https://webservices-vqxm.onrender.com/genres
-
-#   POST https://webservices-vqxm.onrender.com/genres HTTP/1.1 
-# content-type: application/json
-
-# {
-#     "name": "Fantasy",
-#     "ages": "Adult",
-#     "aisle": "10"
-
-# }
