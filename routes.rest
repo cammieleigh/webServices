@@ -9,6 +9,8 @@ content-type: application/json
     "ages":"Teen",
     "aisle":"16"
 }
+
+
 ### edit genre
 PUT http://localhost:8080/genres/665285f3b496665285f3b4961eff67d571c41eff67d571cc HTTP/1.1 
 content-type: application/json
@@ -21,6 +23,40 @@ content-type: application/json
 
 ### delete genre
 DELETE http://localhost:8080/genres/665a5e51d1865067aaec098c HTTP/1.1 
+content-type: application/json
+
+### get all employees
+GET http://localhost:8080/employees
+
+### post employee
+POST http://localhost:8080/employees HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Stevie",
+    "lastName":"Budd",
+    "Role":"Cashier",
+    "shiftDays":"W,TH,SAT",
+    "shiftBeginTime":"4pm",
+    "shiftEndTime":"10pm",
+    "lengthOfEmployment":"1y"
+    }
+
+###edit employee
+PUT http://localhost:8080/employees HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Stevie",
+    "lastName":"Budd",
+    "Role":"Cashier",
+    "shiftDays":"W,F,SAT",
+    "shiftBeginTime":"3pm",
+    "shiftEndTime":"10pm",
+    "lengthOfEmployment":"1.5y"
+    }
+###delete employee
+DELETE http://localhost:8080/employees/ HTTP/1.1 
 content-type: application/json
 
 
@@ -50,4 +86,38 @@ content-type: application/json
 
 ###delete data render
   DELETE https://webservices-vqxm.onrender.com/genres/665a8a47c243181a2f339a02 HTTP/1.1 
+content-type: application/json
+
+### get all employees
+GET https://webservices-vqxm.onrender.com/employees
+
+### post employee
+POST https://webservices-vqxm.onrender.com/employees HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Stevie",
+    "lastName":"Budd",
+    "Role":"Cashier",
+    "shiftDays":"W,TH,SAT",
+    "shiftBeginTime":"4pm",
+    "shiftEndTime":"10pm",
+    "lengthOfEmployment":"1y"
+    }
+
+###edit employee
+PUT https://webservices-vqxm.onrender.com/employees HTTP/1.1 
+content-type: application/json
+
+{
+    "firstName":"Stevie",
+    "lastName":"Budd",
+    "Role":"Cashier",
+    "shiftDays":"W,F,SAT",
+    "shiftBeginTime":"3pm",
+    "shiftEndTime":"10pm",
+    "lengthOfEmployment":"1.5y"
+    }
+###delete employee
+DELETE https://webservices-vqxm.onrender.com/employees/ HTTP/1.1 
 content-type: application/json
