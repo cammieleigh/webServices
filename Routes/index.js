@@ -8,5 +8,7 @@ router.use('/api-docs', swaggerUi.serve);
 router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 router.use('/genres', require('./genres'))
+router.use('/employees', require('./employees'))
+
 
 module.exports = router;

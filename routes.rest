@@ -1,7 +1,7 @@
-GET http://localhost:8080/genres
+GET http://localhost:3000/genres
 
 ###post data
-POST http://localhost:8080/genres HTTP/1.1 
+POST http://localhost:3000/genres HTTP/1.1 
 content-type: application/json
 
 {
@@ -12,7 +12,7 @@ content-type: application/json
 
 
 ### edit genre
-PUT http://localhost:8080/genres/665285f3b496665285f3b4961eff67d571c41eff67d571cc HTTP/1.1 
+PUT http://localhost:3000/genres/665285f3b496665285f3b4961eff67d571c41eff67d571cc HTTP/1.1 
 content-type: application/json
 
 {
@@ -22,41 +22,41 @@ content-type: application/json
 }
 
 ### delete genre
-DELETE http://localhost:8080/genres/665a5e51d1865067aaec098c HTTP/1.1 
+DELETE http://localhost:3000/genres/665a5e51d1865067aaec098c HTTP/1.1 
 content-type: application/json
 
 ### get all employees
-GET http://localhost:8080/employees
+GET http://localhost:3000/employees
 
 ### post employee
-POST http://localhost:8080/employees HTTP/1.1 
+POST http://localhost:3000/Employees HTTP/1.1 
 content-type: application/json
 
 {
-    "firstName":"Stevie",
-    "lastName":"Budd",
-    "Role":"Cashier",
-    "shiftDays":"W,TH,SAT",
-    "shiftBeginTime":"4pm",
-    "shiftEndTime":"10pm",
-    "lengthOfEmployment":"1y"
+    "firstName":"Alexis",
+    "lastName":"Rose",
+    "role":"Cashier",
+    "shiftDays":"M,W,TH",
+    "shiftStartTime":"9am",
+    "shiftEndTime":"4pm",
+    "lengthOfEmployment":"6m"
     }
 
 ###edit employee
-PUT http://localhost:8080/employees HTTP/1.1 
+PUT http://localhost:3000/employees/666e151107f4cb8b649408bc HTTP/1.1 
 content-type: application/json
 
 {
-    "firstName":"Stevie",
-    "lastName":"Budd",
-    "Role":"Cashier",
-    "shiftDays":"W,F,SAT",
-    "shiftBeginTime":"3pm",
-    "shiftEndTime":"10pm",
-    "lengthOfEmployment":"1.5y"
+    "firstName":"Alexis",
+    "lastName":"Rose",
+    "role":"Cashier",
+    "shiftDays":"M,W,F",
+    "shiftStartTime":"9am",
+    "shiftEndTime":"4pm",
+    "lengthOfEmployment":"1y"
     }
 ###delete employee
-DELETE http://localhost:8080/employees/ HTTP/1.1 
+DELETE http://localhost:3000/employees/ HTTP/1.1 
 content-type: application/json
 
 
